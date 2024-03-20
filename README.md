@@ -20,13 +20,16 @@ LH
 
 Joint_Name_Right
 
+に適宜環境にあった値に入れ替えてください。
 
 
 
 
+  </p></br>
 
 <p><br>
-Rigにコンストレイントをつけるスクリプト
+  </p></br>
+<h2>Rigにコンストレイントをつけるスクリプト</h2>
 
 FingerJointRigConstrain.py
   </p></br>
