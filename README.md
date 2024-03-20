@@ -29,7 +29,7 @@ Joint_Name_Right
 
 <p><br>
   </p></br>
-<h2>Rigにコンストレイントをつけるスクリプト</h2>
+<h2>指Rigにコンストレイントをつけるスクリプト</h2>
 
 FingerJointRigConstrain.py
   </p></br>
