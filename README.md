@@ -36,7 +36,7 @@ FingerJointRigConstrain.py
 <p><br><img width="1223" alt="FingerJointRig03" src="https://github.com/KWneko/RiggingAssist/assets/164093711/a4ebdb25-eec1-47e7-8290-e4c071a7c834"></p></br>
 
 <p><br>
-現在テストスクリプトなので当環境に依存している変数になっています。
+現在テストスクリプトなので当環境に依存している変数値になっています。
 
 各変数値にそれぞれの環境にあった値(ジョイント名)に変更してください。
   </p></br>
