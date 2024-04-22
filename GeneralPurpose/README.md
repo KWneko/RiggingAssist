@@ -1,6 +1,6 @@
 <h1><p><br>リグ作成スクリプト</p></h1></br>
 
-<img width="1224" alt="FingerJointRig01" src="[https://github.com/KWneko/RiggingAssist/assets/164093711/3ad2d71e-5ab9-4ef2-89f2-ab344cabcbd9](https://github.com/KWneko/RiggingAssist/assets/164093711/5159bc2d-a620-49f8-a862-b860796d3632)">
+<img width="1224" alt="FingerJointRig01" src="![240422](https://github.com/KWneko/RiggingAssist/assets/164093711/5159bc2d-a620-49f8-a862-b860796d3632)">
 <p><br>
   </p></br>
 <h2>コントロールリグ作成スクリプト</h2>
