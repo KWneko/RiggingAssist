@@ -1,4 +1,4 @@
-<h1><p><br>リグ作成スクリプト</p></h1></br>
+<h1><p><br>Rig作成スクリプト</p></h1></br>
 
 <img width="1224" alt="FingerJointRig01" src="https://github.com/KWneko/RiggingAssist/assets/164093711/5159bc2d-a620-49f8-a862-b860796d3632">
 <p><br>
@@ -11,9 +11,6 @@ ControlRigCreateScript.mel
 現在このスクリプトは片手用になっています。
 
 変数
-
-![240422](https://github.com/KWneko/RiggingAssist/assets/164093711/5159bc2d-a620-49f8-a862-b860796d3632)
-
 
 RLHDummy
 
