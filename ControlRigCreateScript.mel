@@ -1,0 +1,270 @@
+//Circle
+global proc AriRigCreateCircle2()
+{
+string $selOBJS[]= `ls -sl`;
+print($selOBJS);
+
+string $RigName01 = "Rigconcon01";
+
+//円
+circle -ch on -o on -nr 0 1 0 -r 1 -n $RigName01 ;
+
+string $RigName02 = `rename "Rigcon#"`;
+
+
+int $val;
+
+$valX = `intSliderGrp -q -value CubeSliderX`;
+$valY = `intSliderGrp -q -value CubeSliderY`;
+$valZ = `intSliderGrp -q -value CubeSliderZ`;
+print($RigName02);
+
+print(`setAttr ($RigName02 + ".sx") $valX`);
+setAttr ($RigName02 + ".sx") $valX;
+setAttr ($RigName02 + ".sy") $valY;
+setAttr ($RigName02 + ".sz") $valZ;
+
+
+string $firstSelectionObj = $RigName02;
+string $secondSelectionObj = $selOBJS[0];
+print($secondSelectionObj);
+
+select -r $firstSelectionObj;
+select -add $secondSelectionObj;
+print("KyuKyu");
+
+	global string $radioCollection1;
+	string $selected;
+
+	$selected = `radioCollection -q -select $radioCollection1`;
+	if($selected == "radioButton1")
+	{
+		//移動と一致
+		performMatchTranslate 0;
+		print("移動と一致");
+	}
+	else if($selected == "radioButton2")
+	{
+		//移動、回転と一致
+		MatchRotation;
+		performMatchRotate 0;
+		print("すべてのトランスフォームと一致");
+	}
+
+select -r $firstSelectionObj;
+//トランスフォームのフリーズ
+makeIdentity -apply true -t 1 -r 1 -s 1 -n 0 -pn 1;
+
+}
+
+
+//Square
+global proc AriRigCreateSquare2()
+{
+string $selOBJS[]= `ls -sl`;
+print($selOBJS);
+
+string $RigName01 = "Rigconcon01";
+
+//四角
+curve -d 1 -p 1 0 -1 -p -1 0 -1 -p -1 0 1 -p 1 0 1 -p 1 0 -1 -k 0 -k 1 -k 2 -k 3 -k 4 -n $RigName01 ;
+
+string $RigName02 = `rename "Rigcon#"`;
+
+
+int $val;
+
+$valX = `intSliderGrp -q -value CubeSliderX`;
+$valY = `intSliderGrp -q -value CubeSliderY`;
+$valZ = `intSliderGrp -q -value CubeSliderZ`;
+print($RigName02);
+
+print(`setAttr ($RigName02 + ".sx") $valX`);
+setAttr ($RigName02 + ".sx") $valX;
+setAttr ($RigName02 + ".sy") $valY;
+setAttr ($RigName02 + ".sz") $valZ;
+
+
+string $firstSelectionObj = $RigName02;
+string $secondSelectionObj = $selOBJS[0];
+print($secondSelectionObj);
+
+select -r $firstSelectionObj;
+select -add $secondSelectionObj;
+print("KyuKyu");
+
+	global string $radioCollection1;
+	string $selected;
+
+	$selected = `radioCollection -q -select $radioCollection1`;
+	if($selected == "radioButton1")
+	{
+		//移動と一致
+		performMatchTranslate 0;
+		print("移動と一致");
+	}
+	else if($selected == "radioButton2")
+	{
+		//移動、回転と一致
+		MatchRotation;
+		performMatchRotate 0;
+		print("すべてのトランスフォームと一致");
+	}
+
+select -r $firstSelectionObj;
+//トランスフォームのフリーズ
+makeIdentity -apply true -t 1 -r 1 -s 1 -n 0 -pn 1;
+
+}
+
+
+//Kyu
+global proc AriRigCreateKyu2()
+{
+string $selOBJS[]= `ls -sl`;
+print($selOBJS);
+
+string $RigName01 = "Rigconcon01";
+
+//球
+curve -d 1 -p 0 0 1 -p 0 0.5 0.866025 -p 0 0.866025 0.5 -p 0 1 0 -p 0 0.866025 -0.5 -p 0 0.5 -0.866025 -p 0 0 -1 -p 0 -0.5 -0.866025 -p 0 -0.866025 -0.5 -p 0 -1 0 -p 0 -0.866025 0.5 -p 0 -0.5 0.866025 -p 0 0 1 -p 0.707107 0 0.707107 -p 1 0 0 -p 0.707107 0 -0.707107 -p 0 0 -1 -p -0.707107 0 -0.707107 -p -1 0 0 -p -0.866025 0.5 0 -p -0.5 0.866025 0 -p 0 1 0 -p 0.5 0.866025 0 -p 0.866025 0.5 0 -p 1 0 0 -p 0.866025 -0.5 0 -p 0.5 -0.866025 0 -p 0 -1 0 -p -0.5 -0.866025 0 -p -0.866025 -0.5 0 -p -1 0 0 -p -0.707107 0 0.707107 -p 0 0 1 -k 0 -k 1 -k 2 -k 3 -k 4 -k 5 -k 6 -k 7 -k 8 -k 9 -k 10 -k 11 -k 12 -k 13 -k 14 -k 15 -k 16 -k 17 -k 18 -k 19 -k 20 -k 21 -k 22 -k 23 -k 24 -k 25 -k 26 -k 27 -k 28 -k 29 -k 30 -k 31 -k 32 -n $RigName01 ;
+
+string $RigName02 = `rename "Rigcon#"`;
+
+
+int $val;
+
+$valX = `intSliderGrp -q -value CubeSliderX`;
+$valY = `intSliderGrp -q -value CubeSliderY`;
+$valZ = `intSliderGrp -q -value CubeSliderZ`;
+print($RigName02);
+
+print(`setAttr ($RigName02 + ".sx") $valX`);
+setAttr ($RigName02 + ".sx") $valX;
+setAttr ($RigName02 + ".sy") $valY;
+setAttr ($RigName02 + ".sz") $valZ;
+
+
+string $firstSelectionObj = $RigName02;
+string $secondSelectionObj = $selOBJS[0];
+print($secondSelectionObj);
+
+select -r $firstSelectionObj;
+select -add $secondSelectionObj;
+print("KyuKyu");
+
+	global string $radioCollection1;
+	string $selected;
+
+	$selected = `radioCollection -q -select $radioCollection1`;
+	if($selected == "radioButton1")
+	{
+		//移動と一致
+		performMatchTranslate 0;
+		print("移動と一致");
+	}
+	else if($selected == "radioButton2")
+	{
+		//移動、回転と一致
+		MatchRotation;
+		performMatchRotate 0;
+		print("すべてのトランスフォームと一致");
+	}
+
+select -r $firstSelectionObj;
+//トランスフォームのフリーズ
+makeIdentity -apply true -t 1 -r 1 -s 1 -n 0 -pn 1;
+
+}
+
+
+//Cube
+global proc AriRigCreateCube2()
+{
+string $selOBJS[]= `ls -sl`;
+print($selOBJS);
+
+string $RigName01 = "Rigconcon01";
+
+//Cube
+curve -d 1 -p 0.5 0.5 0.5 -p 0.5 0.5 -0.5 -p -0.5 0.5 -0.5 -p -0.5 -0.5 -0.5 -p 0.5 -0.5 -0.5 -p 0.5 0.5 -0.5 -p -0.5 0.5 -0.5 -p -0.5 0.5 0.5 -p 0.5 0.5 0.5 -p 0.5 -0.5 0.5 -p 0.5 -0.5 -0.5 -p -0.5 -0.5 -0.5 -p -0.5 -0.5 0.5 -p 0.5 -0.5 0.5 -p -0.5 -0.5 0.5 -p -0.5 0.5 0.5 -k 0 -k 1 -k 2 -k 3 -k 4 -k 5 -k 6 -k 7 -k 8 -k 9 -k 10 -k 11 -k 12 -k 13 -k 14 -k 15 -n $RigName01 ;
+
+string $RigName02 = `rename "Rigcon#"`;
+
+
+int $val;
+
+$valX = `intSliderGrp -q -value CubeSliderX`;
+$valY = `intSliderGrp -q -value CubeSliderY`;
+$valZ = `intSliderGrp -q -value CubeSliderZ`;
+print($RigName02);
+
+print(`setAttr ($RigName02 + ".sx") $valX`);
+setAttr ($RigName02 + ".sx") $valX;
+setAttr ($RigName02 + ".sy") $valY;
+setAttr ($RigName02 + ".sz") $valZ;
+
+
+string $firstSelectionObj = $RigName02;
+string $secondSelectionObj = $selOBJS[0];
+print($secondSelectionObj);
+
+select -r $firstSelectionObj;
+select -add $secondSelectionObj;
+print("KyuKyu");
+
+	global string $radioCollection1;
+	string $selected;
+
+	$selected = `radioCollection -q -select $radioCollection1`;
+	if($selected == "radioButton1")
+	{
+		//移動と一致
+		performMatchTranslate 0;
+		print("移動と一致");
+	}
+	else if($selected == "radioButton2")
+	{
+		//移動、回転と一致
+		MatchRotation;
+		performMatchRotate 0;
+		print("すべてのトランスフォームと一致");
+	}
+
+select -r $firstSelectionObj;
+//トランスフォームのフリーズ
+makeIdentity -apply true -t 1 -r 1 -s 1 -n 0 -pn 1;
+
+}
+
+
+window -title "RigCreate";
+columnLayout;
+
+//Cube-base
+
+text -label "リグの作成";
+
+intSliderGrp -label "ScaleX" -field true
+	-min 1 -max 20 -step 1 -value 1 CubeSliderX;
+intSliderGrp -label "ScaleY" -field true
+	-min 1 -max 20 -step 1 -value 1 CubeSliderY;
+intSliderGrp -label "ScaleZ" -field true
+	-min 1 -max 20 -step 1 -value 1 CubeSliderZ;
+
+
+string $radioCollection1 = `radioCollection`;
+	radioButton -label "移動と一致して作成" -select radioButton1;
+	radioButton -label "移動、回転と一致して作成" radioButton2;
+
+
+//Circle
+button -label "Circleを作成" -command "AriRigCreateCircle2()";
+//Square
+button -label "Squareを作成" -command "AriRigCreateSquare2()";
+//Kyu
+button -label "Sphereを作成" -command "AriRigCreateKyu2()";
+//Cube
+button -label "Cubeを作成" -command "AriRigCreateCube2()";
+
+showWindow;
