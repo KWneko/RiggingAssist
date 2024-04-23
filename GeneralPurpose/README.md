@@ -6,11 +6,8 @@
 <h2>コントロールリグ作成スクリプト</h2>
 
 ControlRigCreateScript.mel
-<p><br><img width="1222" alt="FingerJointRig02" src="https://github.com/KWneko/RiggingAssist/assets/164093711/742cde2b-2b64-4aea-90b7-2bb2d23e7317"></p></br>
+<p><br></p></br>
 <p><br>
-現在このスクリプトは片手用になっています。
-
-変数
 
 リグを作成したい対象オブジェクトを選択してから
 
